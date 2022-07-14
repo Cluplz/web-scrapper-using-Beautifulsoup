@@ -8,5 +8,5 @@ soup = BeautifulSoup(r.content, 'html.parser')
 s = soup.find('div', class_='m-detail--body')
 content = s.find_all('p')
 
-for line in content:
-    print(line.text)
+for paragraphs in content:
+    print(paragraphs.text)
