@@ -6,7 +6,7 @@ soup = BeautifulSoup(r.content, 'html.parser')
 
 
 s = soup.find('div', class_='m-detail--body')
-content = s.find_all('p')
 
-for paragraphs in content:
+
+for paragraphs in s.find_all('p'):
     print(paragraphs.text)
